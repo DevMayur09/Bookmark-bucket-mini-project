@@ -1,0 +1,149 @@
+:root {
+  --main-color: #fa5252;
+  --white: white;
+}
+body {
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.heading {
+  background-color: var(--main-color);
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: rgb(243, 237, 227);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 20px 20px;
+  padding: 10px;
+}
+.heading img {
+  width: 40px;
+  margin-left: 10px;
+}
+/* container styling starts here */
+.container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  position: relative;
+  top: 75px;
+  padding-top: 50px;
+  margin: 10px auto;
+}
+/* add-bookmark styling starts here */
+.add-bookmarks {
+  width: 100%;
+  position: sticky;
+  top: 100px;
+  /* border: 1px solid blue; */
+  /* background-color: blue; */
+}
+.add-bookmarks .new-bookmark-wrapper {
+  display: grid;
+  width: 1fr;
+  padding: 20px;
+  justify-items: center;
+  background-color: rgba(235, 235, 160, 0.39);
+  border: 1px solid rgb(250, 221, 163);
+  border-radius: 15px;
+}
+.add-bookmarks .new-bookmark-wrapper input {
+  border: 1px solid rgb(250, 221, 163);
+  width: 85%;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.add-bookmarks .new-bookmark-wrapper button {
+  border: 1px solid rgb(250, 221, 163);
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 15px;
+  color: grey;
+  align-items: center;
+  width: 12vw;
+  padding: 5px 5px;
+}
+/* add-bookmark styling ends here */
+
+/* bookmark list starts */
+.bookmark-list-container {
+  width: 100%;
+}
+.bookmark-list-wrapper {
+  width: 80%;
+  margin: 0px auto;
+  color: gray;
+  background-color: rgba(235, 235, 160, 0.39);
+  border: 1px solid rgb(250, 221, 163);
+  border-radius: 15px;
+}
+.bookmark-list-wrapper .bookmark-list-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  letter-spacing: 1.5px;
+}
+.bookmark-list-wrapper .bookmark-list-heading h3 {
+  font-weight: 400;
+}
+.bookmark-list-wrapper .bookmark-list {
+  margin: 40px 0px 70px;
+  color: gray;
+  border-radius: 10px;
+}
+.bookmark-list-wrapper .bookmark-list li {
+  list-style: none;
+}
+.bookmark-list-wrapper .bookmark-list .list-items {
+  background-color: rgba(230, 222, 197, 0.329);
+  border: 1px solid rgb(252, 237, 207);
+  border-radius: 15px;
+  color: gray;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(0, 255, 255, 0.233); */
+}
+
+.bookmark-list-wrapper .bookmark-list .list-items a {
+  text-decoration: none;
+  width: 84%;
+  padding: 5px 10px 5px 20px;
+  font-size: 24px;
+  color: gray;
+  display: inline-block;
+  margin-left: 10px;
+}
+.bookmark-list-wrapper .bookmark-list .list-items a:hover {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.bookmark-list-wrapper .bookmark-list .list-items button {
+  border-style: none;
+  display: inline-block;
+  background-color: transparent;
+  margin-left: 10px;
+  /* float: right; */
+}
+/* bookmark list ends */
+
+/* container styling ends here */
